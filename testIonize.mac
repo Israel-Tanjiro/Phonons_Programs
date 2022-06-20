@@ -1,0 +1,20 @@
+/g4cmp/voltage 0.0000000000001 volt
+/gun/number 1
+/gun/particle mu-
+/gun/position -3.7 0.1 0 cm		# Left to right across frame
+/gun/direction 1 0 0
+/gun/energy 50 MeV
+/g4cmp/samplingEnergy 1 keV
+/g4cmp/producePhonons 0.1		# EM hits, so can produce many
+/g4cmp/produceCharges 0.1		# Scale down charge carriers
+/g4cmp/sampleLuke 0.1
+/g4cmp/hTrappingMFP 0.03 cm
+/g4cmp/eTrappingMFP 0.03 cm
+/run/initialize
+# Disable processes which change particles
+/process/activate phononScattering
+/process/activate G4CMPLukeScattering
+/process/activate G4CMPInterValleyScattering
+###/tracking/verbose 1
+/process/setVerbose 1 G4CMPSecondaryProduction
+/run/beamOn 1
