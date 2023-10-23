@@ -11,6 +11,7 @@
 // 20170728  Change function args "alpha, beta, gamma" to "al, bt, gm" (-Wshadow)
 //I modify to include the option for the case of rhomohedral
 // I Modify the Fill of Rhomobohedral Elastic Constants October 2 2023
+//I Modify all the other Elastic Constant Groups October 23 2023
 #include "G4CMPCrystalGroup.hh"
 #include "G4PhysicalConstants.hh"
 #include "G4SystemOfUnits.hh"
